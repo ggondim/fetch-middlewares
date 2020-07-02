@@ -1,6 +1,6 @@
 {
   "name": "@fetch-middlewares/ejson",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "An EJSON parser/converter middleware for Fetch",
   "main": "index.js",
   "scripts": {

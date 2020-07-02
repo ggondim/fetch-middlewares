@@ -1,6 +1,6 @@
 import { EJSON } from 'bson';
 
-export default async (next) => async (request, options) => {
+export default (next) => async (request, options) => {
   //
   // BEFORE
   // Modify/Use Request
@@ -14,7 +14,7 @@ export default async (next) => async (request, options) => {
   const response = await next(request, options);
 
   if (response.headers
-    && options.ejson !== false
+    && ((options && options.ejson !== false) || !options)
     && response.headers.has('Content-Type')
     && response.headers.get('Content-Type').indexOf('json') !== -1
   ) {

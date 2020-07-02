@@ -1,6 +1,6 @@
 {
   "name": "@fetch-middlewares/oauth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An OAuth 2.0 client middleware for Fetch",
   "main": "index.js",
   "scripts": {

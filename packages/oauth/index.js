@@ -1,6 +1,6 @@
 async function transformRequest(request, auth) {
   if (auth && auth.token) {
-    request.headers.set('Authorization') = `Bearer ${auth.token}`;
+    request.headers.set('Authorization', `Bearer ${auth.token}`);
   } else if (auth && auth.user && auth.password) {
     const encoded = btoa(`${auth.user}:${auth.password}`);
     request.headers.Authorization = `Basic ${encoded}`;
