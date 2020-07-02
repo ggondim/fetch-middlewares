@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Isomorphic, unopinionated, agnostic, ultra-tiny (129 bytes gzipped, 9 LOC) and extensible middleware solution for Fetch API.",
   "main": "index.js",
+  "files": ["index.js"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
