@@ -1,6 +1,6 @@
 {
   "name": "fetch-middlewares",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Isomorphic, unopinionated, agnostic, ultra-tiny (129 bytes gzipped, 9 LOC) and extensible middleware solution for Fetch API.",
   "main": "index.js",
   "files": [
