@@ -1,0 +1,33 @@
+{
+  "name": "@fetch-middlewares/ejson",
+  "version": "1.0.0",
+  "description": "An EJSON parser/converter middleware for Fetch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ggondim/fetch-middlewares.git"
+  },
+  "keywords": [
+    "fetch",
+    "middleware",
+    "fetch-middlewares",
+    "ejson",
+    "bson",
+    "extended-json"
+  ],
+  "author": {
+    "name": "Gustavo Gondim",
+    "url": "https://github.com/ggondim"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ggondim/fetch-middlewares/issues"
+  },
+  "homepage": "https://github.com/ggondim/fetch-middlewares#readme",
+  "dependencies": {
+    "bson": "^4.0.4"
+  }
+}
