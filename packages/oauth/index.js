@@ -1,9 +1,9 @@
-async function transformRequest(request, auth) {
+async function transformRequest(request, options, auth) {
   if (auth && auth.token) {
-    request.headers.set('Authorization', `Bearer ${auth.token}`);
+    options.headers.set('Authorization', `Bearer ${auth.token}`);
   } else if (auth && auth.user && auth.password) {
     const encoded = btoa(`${auth.user}:${auth.password}`);
-    request.headers.Authorization = `Basic ${encoded}`;
+    options.headers.Authorization = `Basic ${encoded}`;
   }
 }
 
@@ -61,7 +61,7 @@ function buildMiddleware({
   token,
   storage,
 } = {}) {
-  return (next) => async (request) => {
+  return (next) => async (request, options) => {
     let auth;
 
     if (storage) {
@@ -74,7 +74,7 @@ function buildMiddleware({
       auth = { user, password };
     }
 
-    transformRequest(request, auth);
+    transformRequest(request, options, auth);
     return next(req);
   }
 }
